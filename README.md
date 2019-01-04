@@ -10,13 +10,13 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-wepy`:
+Next, install `@setstate/eslint-plugin-wepy`:
 
 ```
-$ npm install eslint-plugin-wepy --save-dev
+$ npm install @setstate/eslint-plugin-wepy --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-wepy` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@setstate/eslint-plugin-wepy` globally.
 
 ## Usage
 
@@ -25,7 +25,7 @@ Add `wepy` to the plugins section of your `.eslintrc` configuration file. You ca
 ```json
 {
     "plugins": [
-        "wepy"
+        "@setstate/wepy"
     ]
 }
 ```
@@ -36,14 +36,19 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "wepy/rule-name": 2
+        "@setstate/wepy/script-indent": ['warn', 2, {
+          'baseIndent': 1,
+        }]
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+### @setstate/wepy/script-indent
+
+This rule is similar to core [indent](https://eslint.org/docs/rules/indent) rule, but it has an option for inside of <script> tag.
+
 
 
 
