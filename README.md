@@ -45,7 +45,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-### @setstate/wepy/script-indent
+### [@setstate/wepy/script-indent](https://github.com/ineo6/eslint-plugin-wepy/blob/master/docs/rules/script-indent.md)
 
 This rule is similar to core [indent](https://eslint.org/docs/rules/indent) rule, but it has an option for inside of <script> tag.
 
